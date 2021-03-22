@@ -1,0 +1,21 @@
+.brand-container {
+	margin: 10px;
+}
+
+.brand-text {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+
+.search-bar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+
+.breeds-container {
+	padding: 10px;
+}
+

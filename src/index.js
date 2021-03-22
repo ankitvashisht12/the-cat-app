@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'semantic-ui-css/semantic.min.css'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+import {QueryClientProvider, QueryClient} from 'react-query';
 
-ReactDOM.render (<React.StrictMode>
-  <App/>
-</React.StrictMode>, document.getElementById('root'));
+axios.defaults.baseURL = 'https://api.thecatapi.com/v1';
+axios.defaults.headers.common['x-api-key'] = `${
+  process.env.REACT_APP_CAT_API
+}`;
+
+const queryClient = new QueryClient();
+
+ReactDOM.render (
+  <QueryClientProvider client={queryClient}>
+    <App/></QueryClientProvider>,
+  document.getElementById('root')
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
