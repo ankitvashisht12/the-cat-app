@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# The Cat App 
+
+**Discover you fav. cat in seconds !! 😜**
+ ![cat app](https://github.com/ankitvashisht12/the-cat-app/blob/main/the%20cat%20app.png)
+ 
+ > Note : This project is demo project using react-query. *No harm is caused to any animal while creating this project. Pun intended !!* 
+
+========== Rest is Boring Stuff. Read on your own risk ! =============
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
